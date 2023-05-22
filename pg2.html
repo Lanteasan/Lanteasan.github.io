@@ -1,34 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
 
-<html>
-  <head>
-   
-	<link rel="stylesheet" href="CSS/main.css"> </link>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/main.css"> 
 
-	</link>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-	<title>Gallery</title>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-<!--bootstrap-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 <!--font-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
-	<style type="text/css">
-		*{
+  <style type="text/css">
+*{
 margin: 0px;
 padding: 0px;
 text-decoration: none;
 }
 body{
 box-sizing: border-box;
+}
+
+a{
+  color: #EDAB0E;
 }
 .sidebar{
 position: fixed;
@@ -38,7 +43,7 @@ height: 100%;
 top: 0;
 left: 0;
 z-index: 1;
-opacity: 90% }
+opacity: 80% }
 
 .sidebar h1{
 text-align: center;
@@ -61,241 +66,293 @@ padding: 0 20px;
 margin-left: 210px ;
 }
 
-		body {
+    body {
+      background-image: url("image/art2.jpg");
+      width: 100%;
+      background-size: 100%;
+      background-repeat:  repeat;
+      background-position: center middle;
+    } 
 
-			background-image: url("image/art2.jpg");
-			width: 100%;
-			background-size: cover;
-			background-repeat:  no-repeat;
-			background-position: center middle;
-		}	
-
-		div {
-			color: #86D1DB;
-			background-color: ;
-			font-family: 'Abril Fatface', cursive;
-		}	
+    div {
+      color: #86D1DB;
+      background-color: ;
+      font-family: 'Abril Fatface', cursive;
+    } 
 
 
-		.btn-primary {
+    .btn-primary {
         background-color: #EBEDDF;
       }
 
-		.callOutP {
-			background-color: #EBEDDF;
-			font-family: 'Roboto', sans-serif;
-			font-family: 'Poiret One', cursive;;
-		}
+    .callOutP {
+      background-color: #EBEDDF;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Poiret One', cursive;;
+    }
 
-		#dp {
-			background-color: #E4F3E6;
-			font-family: 'Poiret One', cursive;;
-		}
+    #dp {
+      background-color: #E4F3E6;
+      font-family: 'Poiret One', cursive;;
+    }
 
-		.col {
-			background-image: url("image/art2.jpg")
-			border-style: solid;
-			float: left;
-			width: 30%;
-			padding: 10px;
-		}
+    .col {
+      background-image: url("image/art2.jpg")
+      border-style: solid;
+      float: left;
+      width: 30%;
+      padding: 10px;
+    }
 
-		.header{
-			background-color: whitesmoke;
-		}
+    .header{
+      background-color: whitesmoke;
+    }
 
-		.logo {
+    .logo {
       width: 90%;
     }
 
-	</style>
+
+    .linksize {
+      font-size: 0.25in;
+    }
+   
+  </style>
+
 
 </head>
-
 <body>
 
-<!--my homepage Banner-->
-  
-  <div class="sidebar">
+
+<div class="sidebar">
 <h1><img src="1logo.svg" class="float-left img-fluid logo"><!--mark--></h1>
 
 
 <ul class="nav">
-<li><a href="#">
+<div class="row ">
+<div class="col main">
+&nbsp;
+<a href="index.html">HomePage</a>
+&nbsp;
+</div>
+&nbsp;
+&nbsp;
+&nbsp;
+<a href="pg2.html">Gallery</a>
+&nbsp;
 
-<span><a href="index.html">HomePage</a></span>
-</a></li>
-<li><a href="#">
-<i class="fas fa-concierge-bell"></i>
-<span><a href="pg2.html">Gallery</a></span>
-</a></li>
-<li><a href="#">
-<i class="fas fa-calendar-alt"></i>
-<span><a href="pg3.html">About Me</a></span>
-</a></li>
-<li><a href="#">
-<i class="fas fa-question-circle"></i>
-<span><a href="pg4.html">Contact</a></span>
-</a></li>
-<i class="fas fa-question-circle"></i>
-<span></span>
-</a></li>
+
+<a href="pg3.html">About Me</a>
+&nbsp;
+
+<!--<a href="pg4.html">Contact</a>-->
 
 </ul>
 </div>
+
 <div class="content">
-	<!-- Gallery -->
-<div class="row">
+  <section class="gallery min-vh-100">
+  <div class="row">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="image/albummockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="gallery-item"
+      alt="Gallery1"
     />
 
     <img
       src="image/poster.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      class="gallery-item"
+      alt="Gallery2"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="image/cardmockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
+      class="gallery-item"
+      alt="Gallery3"
     />
 
     <img
       src="image/cardmockup1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="gallery-item"
+      alt="Gallery4"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="image/mag2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      class="gallery-item"
+      alt="Gallery5"
     />
 
     <img
       src="image/mag1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      class="gallery-item"
+      alt="Gallery6"
     />
   </div>
-</div>
-<!-- Gallery -->
+  </div>
 
-	<!-- Gallery -->
-<div class="row">
+  --------------1st round
+  <div class="row">
+    <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="image/mag2.jpg"
+      class="gallery-item"
+      alt="Gallery5"
+    />
+
+    <img
+      src="image/mag1.jpg"
+      class="gallery-item"
+      alt="Gallery6"
+    />
+  </div>
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="image/cardmockup2.jpg"
+      class="gallery-item"
+      alt="Gallery3"
+    />
+
+    <img
+      src="image/cardmockup1.jpg"
+      class="gallery-item"
+      alt="Gallery4"
+    />
+  </div>
+
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="image/albummockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="gallery-item"
+      alt="Gallery1"
     />
 
     <img
       src="image/poster.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      class="gallery-item"
+      alt="Gallery2"
+    />
+
+  </div>
+  </div>
+-------------- 2nd round
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="image/albummockup2.jpg"
+      class="gallery-item"
+      alt="Gallery1"
+    />
+
+    <img
+      src="image/poster.jpg"
+      class="gallery-item"
+      alt="Gallery2"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="image/cardmockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
+      class="gallery-item"
+      alt="Gallery3"
     />
 
     <img
       src="image/cardmockup1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="gallery-item"
+      alt="Gallery4"
     />
   </div>
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
       src="image/mag2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
+      class="gallery-item"
+      alt="Gallery5"
     />
 
     <img
       src="image/mag1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
+      class="gallery-item"
+      alt="Gallery6"
     />
   </div>
-</div>
-<!-- Gallery -->
-	<!-- Gallery -->
-<div class="row">
+  </div>
+----------------3rd round
+  <div class="row">
+    <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="image/mag2.jpg"
+      class="gallery-item"
+      alt="Gallery5"
+    />
+
+    <img
+      src="image/mag1.jpg"
+      class="gallery-item"
+      alt="Gallery6"
+    />
+  </div>
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="image/cardmockup2.jpg"
+      class="gallery-item"
+      alt="Gallery3"
+    />
+
+    <img
+      src="image/cardmockup1.jpg"
+      class="gallery-item"
+      alt="Gallery4"
+    />
+  </div>
+
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
       src="image/albummockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
+      class="gallery-item"
+      alt="Gallery1"
     />
 
     <img
       src="image/poster.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
+      class="gallery-item"
+      alt="Gallery2"
     />
+
   </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="image/cardmockup2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="image/cardmockup1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
   </div>
+  ------------------4th round
+  </section>
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="image/mag2.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="image/mag1.jpg"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
+<!-- Modal -->
+<div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/1.jpg" class="modal-img" alt="Modal Image">
+      </div>
+    </div>
   </div>
 </div>
-<!-- Gallery -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
 
-</div>
-
-<!--
-<i class="fas fa-question-circle"></i>
-<span>Instagram</span>
-</a></li>
-<i class="fas fa-question-circle"></i>
-<span>Discord</span>
-</a></li>
-<i class="fas fa-question-circle"></i>
-<span>Twitter</span>
-</a></li>
-</ul>
--->
-
+  <script type="text/javascript">
+    document.addEventListener("click",function (e){
+      if(e.target.classList.contains("gallery-item")){
+          const src = e.target.getAttribute("src");
+          document.querySelector(".modal-img").src = src;
+          const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+          myModal.show();
+      }
+    })
+  </script>
 </body>
 </html>
